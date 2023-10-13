@@ -3,4 +3,4 @@
  By Muhammad Ken Izzulhaq
 
 Put this on your html head to use this cdn    
-<link rel="stylesheet" href="https://izzulaverroes.github.io/ave-cdn/ave-cdn.css">
+<code><link rel="stylesheet" href="https://izzulaverroes.github.io/ave-cdn/ave-cdn.css"></code>
