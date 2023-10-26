@@ -734,60 +734,75 @@ progress {
 
 .col-1 {
   flex: 0 0 auto;
-  width: 8.33333333%;
+  width: 6.666666666666667%;
 }
 
 .col-2 {
   flex: 0 0 auto;
-  width: 16.66666667%;
+  width: 13.33333333333333%;
 }
 
 .col-3 {
   flex: 0 0 auto;
-  width: 25%;
+  width: 20%;
 }
 
 .col-4 {
   flex: 0 0 auto;
-  width: 33.33333333%;
+  width: 26.66666666666667%;
 }
 
 .col-5 {
   flex: 0 0 auto;
-  width: 41.66666667%;
+  width: 33.33333333333333%;
 }
 
 .col-6 {
   flex: 0 0 auto;
-  width: 50%;
+  width: 40%;
 }
 
 .col-7 {
   flex: 0 0 auto;
-  width: 58.33333333%;
+  width: 46.66666666666667%;
 }
 
 .col-8 {
   flex: 0 0 auto;
-  width: 66.66666667%;
+  width: 53.33333333333334%;
 }
 
 .col-9 {
   flex: 0 0 auto;
-  width: 75%;
+  width: 60%;
 }
 
 .col-10 {
   flex: 0 0 auto;
-  width: 83.33333333%;
+  width: 66.66666666666667%;
 }
 
 .col-11 {
   flex: 0 0 auto;
-  width: 91.66666667%;
+  width: 73.33333333333334%;
 }
 
 .col-12 {
+  flex: 0 0 auto;
+  width: 80%;
+}
+
+.col-13 {
+  flex: 0 0 auto;
+  width: 86.66666666666667%;
+}
+
+.col-14 {
+  flex: 0 0 auto;
+  width: 93.33333333333334%;
+}
+
+.col-15 {
   flex: 0 0 auto;
   width: 100%;
 }
@@ -952,49 +967,75 @@ progress {
   }
   .col-sm-1 {
     flex: 0 0 auto;
-    width: 8.33333333%;
+    width: 6.666666666666667%;
   }
+  
   .col-sm-2 {
     flex: 0 0 auto;
-    width: 16.66666667%;
+    width: 13.33333333333333%;
   }
+  
   .col-sm-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 20%;
   }
+  
   .col-sm-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 26.66666666666667%;
   }
+  
   .col-sm-5 {
     flex: 0 0 auto;
-    width: 41.66666667%;
+    width: 33.33333333333333%;
   }
+  
   .col-sm-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 40%;
   }
+  
   .col-sm-7 {
     flex: 0 0 auto;
-    width: 58.33333333%;
+    width: 46.66666666666667%;
   }
+  
   .col-sm-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 53.33333333333334%;
   }
+  
   .col-sm-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 60%;
   }
+  
   .col-sm-10 {
     flex: 0 0 auto;
-    width: 83.33333333%;
+    width: 66.66666666666667%;
   }
+  
   .col-sm-11 {
     flex: 0 0 auto;
-    width: 91.66666667%;
+    width: 73.33333333333334%;
   }
+  
   .col-sm-12 {
+    flex: 0 0 auto;
+    width: 80%;
+  }
+  
+  .col-sm-13 {
+    flex: 0 0 auto;
+    width: 86.66666666666667%;
+  }
+  
+  .col-sm-14 {
+    flex: 0 0 auto;
+    width: 93.33333333333334%;
+  }
+  
+  .col-sm-15 {
     flex: 0 0 auto;
     width: 100%;
   }
@@ -1121,49 +1162,75 @@ progress {
   }
   .col-md-1 {
     flex: 0 0 auto;
-    width: 8.33333333%;
+    width: 6.666666666666667%;
   }
+  
   .col-md-2 {
     flex: 0 0 auto;
-    width: 16.66666667%;
+    width: 13.33333333333333%;
   }
+  
   .col-md-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 20%;
   }
+  
   .col-md-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 26.66666666666667%;
   }
+  
   .col-md-5 {
     flex: 0 0 auto;
-    width: 41.66666667%;
+    width: 33.33333333333333%;
   }
+  
   .col-md-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 40%;
   }
+  
   .col-md-7 {
     flex: 0 0 auto;
-    width: 58.33333333%;
+    width: 46.66666666666667%;
   }
+  
   .col-md-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 53.33333333333334%;
   }
+  
   .col-md-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 60%;
   }
+  
   .col-md-10 {
     flex: 0 0 auto;
-    width: 83.33333333%;
+    width: 66.66666666666667%;
   }
+  
   .col-md-11 {
     flex: 0 0 auto;
-    width: 91.66666667%;
+    width: 73.33333333333334%;
   }
+  
   .col-md-12 {
+    flex: 0 0 auto;
+    width: 80%;
+  }
+  
+  .col-md-13 {
+    flex: 0 0 auto;
+    width: 86.66666666666667%;
+  }
+  
+  .col-md-14 {
+    flex: 0 0 auto;
+    width: 93.33333333333334%;
+  }
+  
+  .col-md-15 {
     flex: 0 0 auto;
     width: 100%;
   }
@@ -1290,49 +1357,75 @@ progress {
   }
   .col-lg-1 {
     flex: 0 0 auto;
-    width: 8.33333333%;
+    width: 6.666666666666667%;
   }
+  
   .col-lg-2 {
     flex: 0 0 auto;
-    width: 16.66666667%;
+    width: 13.33333333333333%;
   }
+  
   .col-lg-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 20%;
   }
+  
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 26.66666666666667%;
   }
+  
   .col-lg-5 {
     flex: 0 0 auto;
-    width: 41.66666667%;
+    width: 33.33333333333333%;
   }
+  
   .col-lg-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 40%;
   }
+  
   .col-lg-7 {
     flex: 0 0 auto;
-    width: 58.33333333%;
+    width: 46.66666666666667%;
   }
+  
   .col-lg-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 53.33333333333334%;
   }
+  
   .col-lg-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 60%;
   }
+  
   .col-lg-10 {
     flex: 0 0 auto;
-    width: 83.33333333%;
+    width: 66.66666666666667%;
   }
+  
   .col-lg-11 {
     flex: 0 0 auto;
-    width: 91.66666667%;
+    width: 73.33333333333334%;
   }
+  
   .col-lg-12 {
+    flex: 0 0 auto;
+    width: 80%;
+  }
+  
+  .col-lg-13 {
+    flex: 0 0 auto;
+    width: 86.66666666666667%;
+  }
+  
+  .col-lg-14 {
+    flex: 0 0 auto;
+    width: 93.33333333333334%;
+  }
+  
+  .col-lg-15 {
     flex: 0 0 auto;
     width: 100%;
   }
@@ -1459,49 +1552,75 @@ progress {
   }
   .col-xl-1 {
     flex: 0 0 auto;
-    width: 8.33333333%;
+    width: 6.666666666666667%;
   }
+  
   .col-xl-2 {
     flex: 0 0 auto;
-    width: 16.66666667%;
+    width: 13.33333333333333%;
   }
+  
   .col-xl-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 20%;
   }
+  
   .col-xl-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 26.66666666666667%;
   }
+  
   .col-xl-5 {
     flex: 0 0 auto;
-    width: 41.66666667%;
+    width: 33.33333333333333%;
   }
+  
   .col-xl-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 40%;
   }
+  
   .col-xl-7 {
     flex: 0 0 auto;
-    width: 58.33333333%;
+    width: 46.66666666666667%;
   }
+  
   .col-xl-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 53.33333333333334%;
   }
+  
   .col-xl-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 60%;
   }
+  
   .col-xl-10 {
     flex: 0 0 auto;
-    width: 83.33333333%;
+    width: 66.66666666666667%;
   }
+  
   .col-xl-11 {
     flex: 0 0 auto;
-    width: 91.66666667%;
+    width: 73.33333333333334%;
   }
+  
   .col-xl-12 {
+    flex: 0 0 auto;
+    width: 80%;
+  }
+  
+  .col-xl-13 {
+    flex: 0 0 auto;
+    width: 86.66666666666667%;
+  }
+  
+  .col-xl-14 {
+    flex: 0 0 auto;
+    width: 93.33333333333334%;
+  }
+  
+  .col-xl-15 {
     flex: 0 0 auto;
     width: 100%;
   }
@@ -1628,49 +1747,75 @@ progress {
   }
   .col-xxl-1 {
     flex: 0 0 auto;
-    width: 8.33333333%;
+    width: 6.666666666666667%;
   }
+  
   .col-xxl-2 {
     flex: 0 0 auto;
-    width: 16.66666667%;
+    width: 13.33333333333333%;
   }
+  
   .col-xxl-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 20%;
   }
+  
   .col-xxl-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 26.66666666666667%;
   }
+  
   .col-xxl-5 {
     flex: 0 0 auto;
-    width: 41.66666667%;
+    width: 33.33333333333333%;
   }
+  
   .col-xxl-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 40%;
   }
+  
   .col-xxl-7 {
     flex: 0 0 auto;
-    width: 58.33333333%;
+    width: 46.66666666666667%;
   }
+  
   .col-xxl-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 53.33333333333334%;
   }
+  
   .col-xxl-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 60%;
   }
+  
   .col-xxl-10 {
     flex: 0 0 auto;
-    width: 83.33333333%;
+    width: 66.66666666666667%;
   }
+  
   .col-xxl-11 {
     flex: 0 0 auto;
-    width: 91.66666667%;
+    width: 73.33333333333334%;
   }
+  
   .col-xxl-12 {
+    flex: 0 0 auto;
+    width: 80%;
+  }
+  
+  .col-xxl-13 {
+    flex: 0 0 auto;
+    width: 86.66666666666667%;
+  }
+  
+  .col-xxl-14 {
+    flex: 0 0 auto;
+    width: 93.33333333333334%;
+  }
+  
+  .col-xxl-15 {
     flex: 0 0 auto;
     width: 100%;
   }
