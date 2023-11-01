@@ -422,6 +422,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: auto;
 }
 
 button:not(:disabled),
@@ -483,6 +484,7 @@ legend+* {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  appearance: auto;
 }
 
 ::-webkit-search-decoration {
@@ -501,6 +503,7 @@ legend+* {
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: auto;
 }
 
 output {
@@ -3128,7 +3131,6 @@ textarea.form-control-lg {
   -moz-appearance: none;
   appearance: none;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
   print-color-adjust: exact;
 }
 
