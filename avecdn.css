@@ -42,9 +42,9 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: var(--primary);
-  --bs-secondary-rgb: var(--secondary);
-  --bs-tertiary-rgb: var(--tertiary);
+  --bs-primary-rgb: var(--primary-rgb);
+  --bs-secondary-rgb: var(--secondary-rgb);
+  --bs-tertiary-rgb: var(--tertiary-rgb);
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -2631,13 +2631,13 @@ progress {
 
 .table-primary {
   --bs-table-color: #000;
-  --bs-table-bg: #cfe2ff;
-  --bs-table-border-color: #bacbe6;
-  --bs-table-striped-bg: #c5d7f2;
+  --bs-table-bg: var(--primary-table-bg);
+  --bs-table-border-color: var(--primary-table-border);
+  --bs-table-striped-bg: var(--primary-table-striped-bg);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #bacbe6;
+  --bs-table-active-bg: var(--primary-table-active-bg);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #bfd1ec;
+  --bs-table-hover-bg: var(--primary-table-hover-bg);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3996,7 +3996,7 @@ fieldset:disabled .btn {
   --bs-btn-hover-color: var(--primary-text);
   --bs-btn-hover-bg: var(--primary);
   --bs-btn-hover-border-color: var(--primary);
-  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-focus-shadow-rgb: var(--primary-rgb);
   --bs-btn-active-color: var(--primary-text);
   --bs-btn-active-bg: var(--primary);
   --bs-btn-active-border-color: var(--primary);
@@ -8173,8 +8173,8 @@ fieldset:disabled .btn {
 }
 
 .text-bg-primary {
-  color: #fff !important;
-  background-color: RGBA(var(--primary), var(--bs-bg-opacity, 1)) !important;
+  color: var(--primary-text) !important;
+  background-color: RGBA(var(--primary-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
