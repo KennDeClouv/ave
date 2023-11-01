@@ -1,10 +1,14 @@
 @charset "UTF-8";
-
-/* ==============================
-/*©️2023 AVERROES DIGITAL ISLAMIC SCHOOL 
-/*                  Copyright and License at             
-/*         https://github.com/izzulaverroes/ave
-/* ============================== */
+@import url(colors.css);
+@import url(src/colors.css);
+@import url(src/css/colors.css);
+@import url(assets/colors.css);
+@import url(assets/css/colors.css);
+/* --------------------------------------------------------
+      ©️2023 AVERROES DIGITAL ISLAMIC SCHOOL 
+      Copyright and License at             
+      https://github.com/izzulaverroes/ave
+---------------------------------------------------------*/
 :root {
   --bs-blue: #0d99fd;
   --bs-indigo: #6610f2;
@@ -29,8 +33,8 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
+  --bs-primary: var(--primary);
+  --bs-secondary: var(--secondary);
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -479,14 +483,6 @@ legend+* {
   -webkit-appearance: textfield;
 }
 
-/* rtl:raw:
-[type="tel"],
-[type="url"],
-[type="email"],
-[type="number"] {
-  direction: ltr;
-}
-*/
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -3854,22 +3850,23 @@ fieldset:disabled .btn {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
+/* PRIMARY BUTTON */
 .btn-primary {
-  --own-blue: #00b7ff;
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #00b7ff;
-  --bs-btn-border-color: #00a0df;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #007eb0;
-  --bs-btn-hover-border-color: #0073a1;
+  --own-blue: var(--primary);
+  --bs-btn-color: var(--primary-text);
+  --bs-btn-bg: var(--primary);
+  --bs-btn-border-color: var(--primary-border);
+  --bs-btn-hover-color: var(--primary-text);
+  --bs-btn-hover-bg: var(--primary-hover);
+  --bs-btn-hover-border-color: var(--primary-border);
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0073a1;
-  --bs-btn-active-border-color: #005678;
+  --bs-btn-active-color: var(--primary-text);
+  --bs-btn-active-bg: var(--primary);
+  --bs-btn-active-border-color: var(--primary-border);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #297593;
-  --bs-btn-disabled-border-color: #22627c;
+  --bs-btn-disabled-color: var(--primary-text);
+  --bs-btn-disabled-bg: var(--primary-hover);
+  --bs-btn-disabled-border-color: var(--primary-border);
 }
 
 .btn-secondary {
