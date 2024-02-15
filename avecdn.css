@@ -7,11 +7,6 @@
 
 /* CUSTOM COLOR AND SETTINGS */
 @import url(custom.css);
-@import url(css/custom.css);
-@import url(src/custom.css);
-@import url(src/css/custom.css);
-@import url(assets/custom.css);
-@import url(assets/css/custom.css);
 
 /* FONT AWESOME */
 @import url(https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css);
