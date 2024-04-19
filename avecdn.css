@@ -10551,43 +10551,65 @@ fieldset:disabled .btn {
 }
 
 .fs-1 {
-    font-size: calc(1.375rem + 1.5vw) !important
+    font-size: 1rem !important
 }
-
 .fs-2 {
-    font-size: calc(1.325rem + .9vw) !important
+    font-size: 1.25rem !important
 }
-
 .fs-3 {
+    font-size: calc(1.275rem + .3vw) !important
+}
+.fs-4 {
     font-size: calc(1.3rem + .6vw) !important
 }
 
-.fs-4 {
-    font-size: calc(1.275rem + .3vw) !important
-}
-
 .fs-5 {
-    font-size: 1.25rem !important
+    font-size: calc(1.325rem + .9vw) !important
 }
-
 .fs-6 {
-    font-size: 1rem !important
+    font-size: calc(1.375rem + 1.5vw) !important
 }
-
 .fs-7 {
-    font-size: 1.5rem !important;
+    font-size: calc(1.375rem + 2vw) !important
 }
-
 .fs-8 {
-    font-size: 2rem !important;
+    font-size: calc(1.375rem + 2.5vw) !important
 }
-
 .fs-9 {
-    font-size: 2.5rem !important;
+    font-size: calc(1.375rem + 3vw) !important
 }
-
 .fs-10 {
-    font-size: 3rem !important;
+    font-size: calc(1.375rem + 3.5vw) !important
+}
+.fs-11 {
+    font-size: calc(1.375rem + 4vw) !important
+}
+.fs-12 {
+    font-size: calc(1.375rem + 4.5vw) !important
+}
+.fs-13 {
+    font-size: calc(1.375rem + 5vw) !important
+}
+.fs-14 {
+    font-size: calc(1.375rem + 5.5vw) !important
+}
+.fs-15 {
+    font-size: calc(1.375rem + 6vw) !important
+}
+.fs-16 {
+    font-size: calc(1.375rem + 6.5vw) !important
+}
+.fs-17 {
+    font-size: calc(1.375rem + 7vw) !important
+}
+.fs-18 {
+    font-size: calc(1.375rem + 7.5vw) !important
+}
+.fs-19 {
+    font-size: calc(1.375rem + 8vw) !important
+}
+.fs-20 {
+    font-size: calc(1.375rem + 8.5vw) !important
 }
 
 .fs-max {
