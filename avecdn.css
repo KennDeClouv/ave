@@ -16769,68 +16769,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media (min-width:1200px) {
-  .fs-1 {
-    font-size: 1.5rem !important;
-  }
-  .fs-3 {
-    font-size: 2rem !important;
-  }
-  .fs-2 {
-    font-size: 1.75rem !important;
-    }
-    .fs-4 {
-      font-size: 2.5rem !important;
-    }
-    .fs-5 {
-      font-size: 3rem !important;
-    }
-    .fs-6 {
-      font-size: 3.5rem !important;
-    }
-    .fs-7 {
-      font-size: 4rem !important;
-    }
-    .fs-8 {
-      font-size: 4.5rem !important;
-    }
-    .fs-9 {
-      font-size: 5rem !important;
-    }
-    .fs-10 {
-      font-size: 5.5rem !important;
-    }
-    .fs-11 {
-      font-size: 6rem !important;
-    }
-    .fs-12 {
-      font-size: 6.5rem !important;
-    }
-    .fs-13 {
-      font-size: 7rem !important;
-    }
-    .fs-14 {
-      font-size: 7.5rem !important;
-    }
-    .fs-15 {
-      font-size: 8rem !important;
-    }
-    .fs-16 {
-      font-size: 8.5rem !important;
-    }
-    .fs-17 {
-      font-size: 9rem !important;
-    }
-    .fs-18 {
-      font-size: 9.5rem !important;
-    }
-    .fs-19 {
-      font-size: 10rem !important;
-    }
-    .fs-20 {
-      font-size: 10.5rem !important;
-    }
-}
+/* REMOVING FS FOR XXL */
 
 @media print {
     .d-print-inline {
