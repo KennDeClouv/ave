@@ -74,21 +74,36 @@ CSS :
     <tbody>
         <tr>
             <td>1</td>
-            <td>--primary</td>
+            <td>
+
+`
+--primary
+`
+</td>
             <td>All primary color</td>
             <td>Replace bootstrap original primary color with your own color</td>
            <td>Hex / another color format</td>
         </tr>
         <tr>
             <td>1.1</td>
-            <td>--primary-rgb</td>
+            <td>
+
+`
+--primary-rgb
+`
+</td>
             <td>All primary rgb color</td>
             <td>u need to add primary rgb of your primary color too ( just the number )</td>
            <td>RGB </td>
         </tr>
         <tr>
             <td>1.2</td>
-            <td>--primary-emphasis</td>
+            <td>
+
+`
+--primary-emphasis
+`
+</td>
             <td>Primary emphasis color</td>
             <td>an optional emphasis color of your primary color</td>
                     <td>Hex / another color format</td>
@@ -96,7 +111,12 @@ CSS :
         </tr>
         <tr>
             <td>1.3</td>
-            <td>--primary-table-bg</td>
+            <td>
+
+`
+--primary-table-bg
+`
+</td>
             <td>primary table color</td>
             <td>chance your primary table color</td>
                     <td>Hex / another color format</td>
@@ -104,21 +124,35 @@ CSS :
         </tr>
         <tr>
             <td>1.4</td>
-            <td>--primary-table-active-bg</td>
+            <td>
+
+`
+--primary-table-active-bg
+`
+</td>
             <td>primary table color</td>
             <td>on hover primary table color</td>
                     <td>Hex / another color format</td>
         </tr>
         <tr>
             <td>1.5</td>
-            <td>--primary-hover</td>
+            <td>
+
+`
+--primary-hover
+`
+             </td>
             <td>primary button hover color</td>
             <td>u need to chance this color if you're using primary button</td>
                     <td>Hex / another color format</td>
         </tr>
         <tr>
             <td>1.6</td>
-            <td>--primary-border</td>
+            <td>
+`
+--primary-border
+`    
+            </td>
             <td>primary button border color</td>
             <td>u need to chance this color if you're using primary button</td>
                     <td>Hex / another color format</td>
@@ -126,7 +160,11 @@ CSS :
         </tr>
         <tr>
             <td>1.7</td>
-            <td>--primary-active</td>
+            <td>
+`
+--primary-active
+`
+</td>
             <td>primary button active color</td>
             <td>u need to chance this color if you're using primary button</td>
                     <td>Hex / another color format</td>
@@ -134,21 +172,35 @@ CSS :
         </tr>
         <tr>
             <td>2</td>
-            <td>--secondary</td>
+            <td>
+
+`
+--secondary
+`
+            </td>
             <td>All secondary color</td>
             <td>Secondary color used for background or text, same usage as primary color</td>
                     <td>Hex / another color format</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>--tertiary</td>
+            <td>
+`
+--tertiary
+`
+</td>
             <td>third color if u want to use it</td>
             <td>Color used for informational messages or UI elements</td>
                     <td>Hex / another color format</td>
         </tr>
         <tr>
             <td>4</td>
-            <td>--focus-ring</td>
+            <td>
+
+`
+--focus-ring
+`
+</td>
             <td>focus ring color </td>
             <td>the default is blue like orginal</td>
                     <td>RGB</td>
@@ -672,4 +724,4 @@ CSS :
 <br>
 <br>
 <h1>EXTRA SPECIAL FEATURE</h1>
-u can use font awesome icons too, in this cdn we import font awesome css cdn u can use even the max pro. enjoy your free pro icons, to see whats icons are available u can visit offcial font awesome website <a href="https://fontawesome.com/icons" target="_Blank">here</a>
+u can use font awesome icons too, in this cdn we import font awesome css cdn u can use even the max pro. enjoy your free pro icons, to see whats icons are available u can visit offcial font awesome website <a href="https://fontawesome.com/icons" >here</a>
