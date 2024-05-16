@@ -1,6 +1,6 @@
 <h1>Averroes Frontend-Framework</h1>
  Averroes Digital Islamic School FrontEnd Framework / CDN
- By Muhammad Ken Izzulhaq
+ By zulldevv
 
 this is enchanted bootstrap 5 front-end framework with some new feature, only with cdn u can adjust many thing in bootstrap like custom primary color or secondary, font, and extended value of many classes such as margin, padding, font size, gap, and u can explore many new feature there, happy coding! 
 <br>
@@ -10,11 +10,11 @@ this is enchanted bootstrap 5 front-end framework with some new feature, only wi
 Put this on your html to use this cdn<br><br>
 main CSS :<br>
 ```
-<link rel="stylesheet" href="https://zulldevv.github.io/ave/avecdn.css">
+<link rel="stylesheet" href="https://zulldevv.github.io/ave/dist/css/ave.min.css">
 ```
 main JS :<br>
 ```
-<script src="https://zulldevv.github.io/ave/avecdn.js">
+<script src="https://zulldevv.github.io/ave/dist/js/ave.min.js">
 ```
 <br>
 <br>
@@ -29,14 +29,14 @@ HTML :
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://zulldevv.github.io/ave/avecdn.css">
-    <link rel="stylesheet" href="yourstyle.css"
+    <link rel="stylesheet" href="https://zulldevv.github.io/ave/dist/css/ave.min.css">
+    <link rel="stylesheet" href="yourstyle.css">
     <title>Your title</title>
 </head>
 
 <body>
 
-    <script src="https://zulldevv.github.io/ave/avecdn.js"></script>
+    <script src="https://zulldevv.github.io/ave/dist/js/ave.min.js"></script>
 </body>
 
 </html>
@@ -209,7 +209,7 @@ CSS :
 </table>
  <li>
   <h3>MARGIN</h3>
-  Extended margin until 20 class, all margin same as bootstrap 5 margin but its extended by 10 class until m-20<br><br>
+  Extended margin until 50 class, all margin same as bootstrap 5 margin but its extended by 45 class until m-50 and have responsive break point too<br><br>
   <table>
    <thead>
     <tr>
@@ -258,12 +258,22 @@ CSS :
      <td>margin-left : 18rem <br>
      margin-right : 18rem</td>
     </tr>
+    <tr>
+     <td>8</td>
+     <td>m-20</td>
+     <td>margin : 48rem</td>
+    </tr>
+    <tr>
+     <td>9</td>
+     <td>ms-20</td>
+     <td>margin-left : 48rem</td>
+    </tr>
    </tbody>
   </table>
  </li>
  <li>
   <h3>PADDING</h3>
-  Extended padding until 20 class, all padding same as bootstrap 5 padding but its extended by 10 class until p-20<br><br>
+  Extended padding until 50 class, all padding same as bootstrap 5 padding but its extended by 45 class until p-50 and have responsive break point too<br><br>
   <table>
    <thead>
     <tr>
@@ -311,6 +321,16 @@ CSS :
      <td>px-20</td>
      <td>padding-left : 18rem <br>
      padding-right : 18rem</td>
+    </tr>
+    <tr>
+     <td>8</td>
+     <td>p-50</td>
+     <td>padding : 48rem</td>
+    </tr>
+    <tr>
+     <td>8</td>
+     <td>ps-50</td>
+     <td>padding-left : 48rem</td>
     </tr>
    </tbody>
   </table>
@@ -720,8 +740,75 @@ CSS :
    </tbody>
   </table>
  </li>
+  <li>
+  <h3>Extended breakpoint</h3>
+  bootstrap only have 5 breakpoint which is sm, md, lg, xl, and xxl so we extend the breakpoint until 2xl for 2k - 4k resolution <br><br>
+  <table>
+   <thead>
+    <tr>
+     <th>No</th>
+     <th>Class &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+     <th>Style &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>1</td>
+     <td>turn-5</td>
+     <td>transform : rotate(5deg)</td>
+    </tr>
+   </tbody>
+  </table>
+ </li>
 </ol>
 <br>
 <br>
 <h1>EXTRA SPECIAL FEATURE</h1>
 u can use font awesome icons too, in this cdn we import font awesome css cdn u can use even the max pro. enjoy your free pro icons, to see whats icons are available u can visit offcial font awesome website <a href="https://fontawesome.com/icons" >here</a>
+<br><br>
+<h1>CHANGELOG</h1>
+<h3>v1.0.0</h3>
+<table>
+ <thead>
+   <tr>
+    <th colspan="3">ADDED</th>
+   </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>No</td>
+   <td>About</td>
+   <td>value</td>
+  </tr>
+  <tr>
+   <td>1</td>
+   <td>margin class extended by 15 classes available until m-20 u can also use breakpoint to make these margins responsive </td>
+   <td>m-20</td>
+  </tr>
+  <tr>
+   <td>2</td>
+   <td>padding class extended by 15 classes available until p-20 u can also use breakpoint to make these paddings responsive </td>
+   <td>p-20</td>
+  </tr>
+  <tr>
+   <td>3</td>
+   <td>font size extended available until fs-25 </td>
+   <td>fs-25</td>
+  </tr>
+  <tr>
+   <td>4</td>
+   <td>adjustable primary, secondary and extra tertiary color palette u can adjust by adding root css variable</td>
+   <td>--primary</td>
+  </tr>
+  <tr>
+   <td>5</td>
+   <td>odd column for who need to make an element center with grid system</td>
+   <td>col-y-12</td>
+  </tr>
+  <tr>
+   <td>6</td>
+   <td>turn classes </td>
+   <td>turn-90</td>
+  </tr>
+ </tbody>
+</table>

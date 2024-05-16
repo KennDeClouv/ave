@@ -12,14 +12,6 @@ At Ave CDN, we take security vulnerabilities seriously and appreciate your help 
 
 4. **Response:** We will acknowledge receipt of your email within 24 hours and work with you to assess and address the reported vulnerability. We'll keep you informed of our progress throughout the process.
 
-## Bug Bounty Program
-
-To incentivize and reward responsible disclosure of security vulnerabilities, Ave CDN operates a bug bounty program. If you discover a security vulnerability and comply with our responsible disclosure guidelines, you may be eligible for a monetary reward.
-
-Please note that only vulnerabilities that meet our eligibility criteria will be considered for a bounty. Rewards will be determined based on the severity of the vulnerability and the quality of the report.
-
-For more information about our bug bounty program, including eligibility criteria and reward amounts, please email us at [zuuliziluuz@gmail.com](mailto:zuuliziluuz@gmail.com).
-
 ## Responsible Disclosure Guidelines
 
 When reporting security vulnerabilities, please adhere to the following guidelines:
