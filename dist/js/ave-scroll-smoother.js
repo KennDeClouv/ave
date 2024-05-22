@@ -1,3 +1,7 @@
+// Scroll Smoother GSAP Club plugin 
+// FOR EDUCATIONAL ONLY
+// more information at https://github.com/zulldevv/gsap-free
+
 !function (e, t) {
     "object" == typeof exports && "undefined" != typeof module ? t(exports) : "function" == typeof define && define.amd ? define(["exports"], t) : t((e = e || self).window = e.window || {})
 }(this, function (e) {
@@ -31,15 +35,15 @@
         for (setTimeout(function checkWarn() {
             if (t)
                 if ("loading" === document.readyState || "interactive" === document.readyState)
-                    document.addEventListener("readystatechange", console.log(  "%cCustom Console Log",
-                    "font-size: 20px; color: blue; font-weight: bold; background-color: yellow; padding: 5px;"));
+                    document.addEventListener("readystatechange", console.log(  "%cSUCCESS | Ave - Smooth scroll",
+                    "font-size: 20px; color: black; font-weight: bold; background-color: white; padding: 5px 20px;font-family:'Chakra Petch',sans-serif;border-radius:1rem"));
 
         }, 50); -1 < --o;)
             if (-1 !== e.indexOf(n[o]))
                 return;
         r || setTimeout(function () {
-            t && (console.log(  "%cCustom Console Log",
-            "font-size: 20px; color: blue; font-weight: bold; background-color: yellow; padding: 5px;"))
+            t && (console.log(  "%cSUCCESS | Ave - Smooth scroll",
+            "font-size: 20px; color: black; font-weight: bold; background-color: white; padding: 5px 20px;font-family:'Chakra Petch',sans-serif;border-radius:1rem"))
         }, 4e3)
     }("undefined" != typeof window ? window.location.host : ""),
         ScrollSmoother.register = function register(e) {

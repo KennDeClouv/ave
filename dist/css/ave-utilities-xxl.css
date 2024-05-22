@@ -692,7 +692,7 @@
     .object-xxl-fit-none {
         -o-object-fit: none !important;
         object-fit: none !important;
-    } 
+    }
 
     .opacity-xxl-0 {
         opacity: 0 !important;
@@ -7804,4 +7804,51 @@
         z-index: 3 !important;
     }
 }
+
+@media print {
+    .d-print-inline {
+        display: inline !important;
+    }
+
+    .d-print-inline-block {
+        display: inline-block !important;
+    }
+
+    .d-print-block {
+        display: block !important;
+    }
+
+    .d-print-grid {
+        display: grid !important;
+    }
+
+    .d-print-inline-grid {
+        display: inline-grid !important;
+    }
+
+    .d-print-table {
+        display: table !important;
+    }
+
+    .d-print-table-row {
+        display: table-row !important;
+    }
+
+    .d-print-table-cell {
+        display: table-cell !important;
+    }
+
+    .d-print-flex {
+        display: flex !important;
+    }
+
+    .d-print-inline-flex {
+        display: inline-flex !important;
+    }
+
+    .d-print-none {
+        display: none !important;
+    }
+}
+
 /* QC Phase 1 PASSED */

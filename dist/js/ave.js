@@ -5701,14 +5701,14 @@
     }
 
     _createTipElement(content) {
-      const tip = this._getTemplateFactory(content).toHtml(); // todo: remove this check on v6
+      const tip = this._getTemplateFactory(content).toHtml();
 
 
       if (!tip) {
         return null;
       }
 
-      tip.classList.remove(CLASS_NAME_FADE$2, CLASS_NAME_SHOW$2); // todo: on v6 the following can be achieved with CSS only
+      tip.classList.remove(CLASS_NAME_FADE$2, CLASS_NAME_SHOW$2); 
 
       tip.classList.add(`bs-${this.constructor.NAME}-auto`);
       const tipId = getUID(this.constructor.NAME).toString();
