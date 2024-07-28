@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docs Breakpoints</title>
+
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2033%2034'%20fill-rule='evenodd'%20stroke-linejoin='round'%20stroke-miterlimit='2'%20xmlns:v='https://vecta.io/nano'%3e%3cpath%20d='M3%2027.472c0%204.409%206.18%205.552%2013.5%205.552%207.281%200%2013.5-1.103%2013.5-5.513s-6.179-5.552-13.5-5.552c-7.281%200-13.5%201.103-13.5%205.513z'%20fill='%23435ebe'%20fill-rule='nonzero'/%3e%3ccircle%20cx='16.5'%20cy='8.8'%20r='8.8'%20fill='%2341bbdd'/%3e%3c/svg%3e"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAEs2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjMzIgogICBleGlmOlBpeGVsWURpbWVuc2lvbj0iMzQiCiAgIGV4aWY6Q29sb3JTcGFjZT0iMSIKICAgdGlmZjpJbWFnZVdpZHRoPSIzMyIKICAgdGlmZjpJbWFnZUxlbmd0aD0iMzQiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249Ijk2LjAiCiAgIHRpZmY6WVJlc29sdXRpb249Ijk2LjAiCiAgIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiCiAgIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjItMDMtMzFUMTA6NTA6MjMrMDI6MDAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDMtMzFUMTA6NTA6MjMrMDI6MDAiPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJwcm9kdWNlZCIKICAgICAgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWZmaW5pdHkgRGVzaWduZXIgMS4xMC4xIgogICAgICBzdEV2dDp3aGVuPSIyMDIyLTAzLTMxVDEwOjUwOjIzKzAyOjAwIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InIiPz5V57uAAAABgmlDQ1BzUkdCIElFQzYxOTY2LTIuMQAAKJF1kc8rRFEUxz9maORHo1hYKC9hISNGTWwsRn4VFmOUX5uZZ36oeTOv954kW2WrKLHxa8FfwFZZK0WkZClrYoOe87ypmWTO7dzzud97z+nec8ETzaiaWd4NWtYyIiNhZWZ2TvE946WZSjqoj6mmPjE1HKWkfdxR5sSbgFOr9Ll/rXoxYapQVik8oOqGJTwqPL5i6Q5vCzeo6dii8KlwpyEXFL519LjLLw6nXP5y2IhGBsFTJ6ykijhexGra0ITl5bRqmWU1fx/nJTWJ7PSUxBbxJkwijBBGYYwhBgnRQ7/MIQIE6ZIVJfK7f/MnyUmuKrPOKgZLpEhj0SnqslRPSEyKnpCRYdXp/9++msneoFu9JgwVT7b91ga+LfjetO3PQ9v+PgLvI1xkC/m5A+h7F32zoLXug38dzi4LWnwHzjeg8UGPGbFfySvuSSbh9QRqZ6H+Gqrm3Z7l9zm+h+iafNUV7O5Bu5z3L/wAdthn7QIme0YAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJTSURBVFiF7Zi9axRBGIefEw2IdxFBRQsLWUTBaywSK4ubdSGVIY1Y6HZql8ZKCGIqwX/AYLmCgVQKfiDn7jZeEQMWfsSAHAiKqPiB5mIgELWYOW5vzc3O7niHhT/YZvY37/swM/vOzJbIqVq9uQ04CYwCI8AhYAlYAB4Dc7HnrOSJWcoJcBS4ARzQ2F4BZ2LPmTeNuykHwEWgkQGAet9QfiMZjUSt3hwD7psGTWgs9pwH1hC1enMYeA7sKwDxBqjGnvNdZzKZjqmCAKh+U1kmEwi3IEBbIsugnY5avTkEtIAtFhBrQCX2nLVehqyRqFoCAAwBh3WGLAhbgCRIYYinwLolwLqKUwwi9pxV4KUlxKKKUwxC6ZElRCPLYAJxGfhSEOCz6m8HEXvOB2CyIMSk6m8HoXQTmMkJcA2YNTHm3congOvATo3tE3A29pxbpnFzQSiQPcB55IFmFNgFfEQeahaAGZMpsIJIAZWAHcDX2HN+2cT6r39GxmvC9aPNwH5gO1BOPFuBVWAZue0vA9+A12EgjPadnhCuH1WAE8ivYAQ4ohKaagV4gvxi5oG7YSA2vApsCOH60WngKrA3R9IsvQUuhIGY00K4flQG7gHH/mLytB4C42EgfrQb0mV7us8AAMeBS8mGNMR4nwHamtBB7B4QRNdaS0M8GxDEog7iyoAguvJ0QYSBuAOcAt71Kfl7wA8DcTvZ2KtOlJEr+ByyQtqqhTyHTIeB+ONeqi3brh+VgIN0fohUgWGggizZFTplu12yW8iy/YLOGWMpDMTPXnl+Az9vj2HERYqPAAAAAElFTkSuQmCC"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" crossorigin="" href="../assets/compiled/css/app.css" />
+    <link
+      rel="stylesheet"
+      crossorigin=""
+      href="../assets/compiled/css/app-dark.css"
+    />
+    <link rel="stylesheet" href="../assets/compiled/css/copy-button.css" />
+    <style>
+      .highlight {
+        background-color: var(--bs-body-bg);
+
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="../assets/static/js/initTheme.js"></script>
+    <div id="app">
+      <div id="sidebar"></div>
+      <div id="main">
+        <header class="mb-3">
+          <a href="#" class="burger-btn d-block d-xl-none">
+            <i class="bi bi-justify fs-3"></i>
+          </a>
+        </header>
+
+        <div class="page-heading">
+          <div class="page-title">
+            <div class="row">
+              <div class="col-12 col-md-6 order-md-1 order-last">
+                <h1>Layout</h1>
+              </div>
+              <div class="col-12 col-md-6 order-md-2 order-first">
+                <nav
+                  aria-label="breadcrumb"
+                  class="breadcrumb-header float-start float-lg-end"
+                >
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="../">Layout</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Breakpoint
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <section class="section">
+            <div class="card">
+              <div class="card-body px-5 fs-5">
+                <div class="bd-content ps-lg-2">
+                  <h2 id="core-concepts" class="mb-4">
+                    Core concepts
+                    <a
+                      class="anchor-link"
+                      href="#core-concepts"
+                      aria-label="Link to this section: Core concepts"
+                    ></a>
+                  </h2>
+                  <ul>
+                    <li>
+                      <p>
+                        <strong
+                          >Breakpoints are the building blocks of responsive
+                          design.</strong
+                        >
+                        Use them to control when your layout can be adapted at a
+                        particular viewport or device size.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong
+                          >Use media queries to architect your CSS by
+                          breakpoint.</strong
+                        >
+                        Media queries are a feature of CSS that allow you to
+                        conditionally apply styles based on a set of browser and
+                        operating system parameters. We most commonly use
+                        <code>min-width</code> in our media queries.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong
+                          >Mobile first, responsive design is the goal.</strong
+                        >
+                        Avee’s CSS aims to apply the bare minimum of styles
+                        to make a layout work at the smallest breakpoint, and
+                        then layers on styles to adjust that design for larger
+                        devices. This optimizes your CSS, improves rendering
+                        time, and provides a great experience for your visitors.
+                      </p>
+                    </li>
+                  </ul>
+                  <h2 id="available-breakpoints">
+                    Available breakpoints
+                    <a
+                      class="anchor-link"
+                      href="#available-breakpoints"
+                      aria-label="Link to this section: Available breakpoints"
+                    ></a>
+                  </h2>
+                  <p>
+                    Avee includes six default breakpoints, sometimes
+                    referred to as <em>grid tiers</em>, for building
+                    responsively. These breakpoints can be customized if you’re
+                    using our source Sass files.
+                  </p>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Breakpoint</th>
+                          <th>Class infix</th>
+                          <th>Dimensions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Extra small</td>
+                          <td><em>None</em></td>
+                          <td>&lt;576px</td>
+                        </tr>
+                        <tr>
+                          <td>Small</td>
+                          <td><code>sm</code></td>
+                          <td>≥576px</td>
+                        </tr>
+                        <tr>
+                          <td>Medium</td>
+                          <td><code>md</code></td>
+                          <td>≥768px</td>
+                        </tr>
+                        <tr>
+                          <td>Large</td>
+                          <td><code>lg</code></td>
+                          <td>≥992px</td>
+                        </tr>
+                        <tr>
+                          <td>Extra large</td>
+                          <td><code>xl</code></td>
+                          <td>≥1200px</td>
+                        </tr>
+                        <tr>
+                          <td>Extra extra large</td>
+                          <td><code>xxl</code></td>
+                          <td>≥1400px</td>
+                        </tr>
+                        <tr>
+                          <td>Double extra extra large</td>
+                          <td><code>2xl</code></td>
+                          <td>≥2000px</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <p>
+                    Each breakpoint was chosen to comfortably hold containers
+                    whose widths are multiples of 12. Breakpoints are also
+                    representative of a subset of common device sizes and
+                    viewport dimensions—they don’t specifically target every use
+                    case or device. Instead, the ranges provide a strong and
+                    consistent foundation to build on for nearly any device.
+                  </p>
+                  <p>
+                    These breakpoints are customizable via Sass—you’ll find them
+                    in a Sass map in our
+                    <code>_variables.scss</code> stylesheet.
+                  </p>
+                  <div class="bd-example-snippet bd-code-snippet bd-file-ref">
+                    <div
+                      class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-bottom"
+                    >
+                      <a
+                        class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small"
+                        href="https://github.com/twbs/bootstrap/blob/v1.0.0/scss/_variables.scss"
+                        >scss/_variables.scss</a
+                      >
+                      <div class="d-flex ms-auto">
+                        <button
+                          type="button"
+                          class="btn-clipboard mt-0 me-0"
+                          aria-label="Copy to clipboard"
+                          data-bs-original-title="Copy to clipboard"
+                        >
+                          <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#clipboard"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$grid-breakpoints</span><span class="o">:</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="na">xs</span><span class="o">:</span> <span class="mi">0</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">sm</span><span class="o">:</span> <span class="mi">576</span><span class="kt">px</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">md</span><span class="o">:</span> <span class="mi">768</span><span class="kt">px</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">lg</span><span class="o">:</span> <span class="mi">992</span><span class="kt">px</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">xl</span><span class="o">:</span> <span class="mi">1200</span><span class="kt">px</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">xxl</span><span class="o">:</span> <span class="mi">1400</span><span class="kt">px</span>
+</span></span><span class="line"><span class="cl">  <span class="na">2xl</span><span class="o">:</span> <span class="mi">2000</span><span class="kt">px</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <p>
+                    For more information and examples on how to modify our Sass
+                    maps and variables, please refer to
+                    <a href="/docs/5.3/layout/grid/#css"
+                      >the CSS section of the Grid documentation</a
+                    >.
+                  </p>
+                  <h2 id="media-queries">
+                    Media queries
+                    <a
+                      class="anchor-link"
+                      href="#media-queries"
+                      aria-label="Link to this section: Media queries"
+                    ></a>
+                  </h2>
+                  <p>
+                    Since Avee is developed to be mobile first, we use a
+                    handful of
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
+                      >media queries</a
+                    >
+                    to create sensible breakpoints for our layouts and
+                    interfaces. These breakpoints are mostly based on minimum
+                    viewport widths and allow us to scale up elements as the
+                    viewport changes.
+                  </p>
+                  <h3 id="min-width">
+                    Min-width
+                    <a
+                      class="anchor-link"
+                      href="#min-width"
+                      aria-label="Link to this section: Min-width"
+                    ></a>
+                  </h3>
+                  <p>
+                    Avee primarily uses the following media query ranges—or
+                    breakpoints—in our source Sass files for our layout, grid
+                    system, and components.
+                  </p>
+                  <div class="bd-code-snippet">
+                    <div class="bd-clipboard">
+                      <button type="button" class="btn-clipboard">
+                        <svg class="bi" role="img" aria-label="Copy">
+                          <use xlink:href="#clipboard"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="c1">// Source mixins
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@include</span><span class="nd"> media-breakpoint-up</span><span class="p">(</span><span class="n">sm</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-up</span><span class="p">(</span><span class="n">md</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-up</span><span class="p">(</span><span class="n">lg</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-up</span><span class="p">(</span><span class="n">xl</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-up</span><span class="p">(</span><span class="n">xxl</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-up</span><span class="p">(</span><span class="n">2xl</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Usage
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nc">.custom-class</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">display</span><span class="o">:</span> <span class="ni">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-up</span><span class="p">(</span><span class="n">sm</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nc">.custom-class</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">display</span><span class="o">:</span> <span class="ni">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <p>
+                    These Sass mixins translate in our compiled CSS using the
+                    values declared in our Sass variables. For example:
+                  </p>
+                  <div class="bd-code-snippet">
+                    <div class="bd-clipboard">
+                      <button type="button" class="btn-clipboard">
+                        <svg class="bi" role="img" aria-label="Copy">
+                          <use xlink:href="#clipboard"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="c1">// X-Small devices (portrait phones, less than 576px)
+</span></span></span><span class="line"><span class="cl"><span class="c1">// No media query for `xs` since this is the default in Avee
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Small devices (landscape phones, 576px and up)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">576</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Medium devices (tablets, 768px and up)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Large devices (desktops, 992px and up)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">992</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// X-Large devices (large desktops, 1200px and up)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">1200</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// XX-Large devices (larger desktops, 1400px and up)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">1400</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 2X-Large devices (larger desktops, 2000px and up)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">2000</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <h3 id="max-width">
+                    Max-width
+                    <a
+                      class="anchor-link"
+                      href="#max-width"
+                      aria-label="Link to this section: Max-width"
+                    ></a>
+                  </h3>
+                  <p>
+                    We occasionally use media queries that go in the other
+                    direction (the given screen size <em>or smaller</em>):
+                  </p>
+                  <div class="bd-code-snippet">
+                    <div class="bd-clipboard">
+                      <button type="button" class="btn-clipboard">
+                        <svg class="bi" role="img" aria-label="Copy">
+                          <use xlink:href="#clipboard"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="c1">// No media query necessary for xs breakpoint as it's effectively `@media (max-width: 0) { ... }`
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@include</span><span class="nd"> media-breakpoint-down</span><span class="p">(</span><span class="n">sm</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-down</span><span class="p">(</span><span class="n">md</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-down</span><span class="p">(</span><span class="n">lg</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-down</span><span class="p">(</span><span class="n">xl</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-down</span><span class="p">(</span><span class="n">xxl</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-down</span><span class="p">(</span><span class="n">2xl</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Example: Style from medium breakpoint and down
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@include</span><span class="nd"> media-breakpoint-down</span><span class="p">(</span><span class="n">md</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nc">.custom-class</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">display</span><span class="o">:</span> <span class="ni">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <p>
+                    These mixins take those declared breakpoints, subtract
+                    <code>.02px</code> from them, and use them as our
+                    <code>max-width</code> values. For example:
+                  </p>
+                  <div class="bd-code-snippet">
+                    <div class="bd-clipboard">
+                      <button type="button" class="btn-clipboard">
+                        <svg class="bi" role="img" aria-label="Copy">
+                          <use xlink:href="#clipboard"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="c1">// `xs` returns only a ruleset and no media query
+</span></span></span><span class="line"><span class="cl"><span class="c1">// ... { ... }
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// `sm` applies to x-small devices (portrait phones, less than 576px)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">max-width</span><span class="o">:</span> <span class="mi">575</span><span class="mf">.98</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// `md` applies to small devices (landscape phones, less than 768px)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">max-width</span><span class="o">:</span> <span class="mi">767</span><span class="mf">.98</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// `lg` applies to medium devices (tablets, less than 992px)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">max-width</span><span class="o">:</span> <span class="mi">991</span><span class="mf">.98</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// `xl` applies to large devices (desktops, less than 1200px)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">max-width</span><span class="o">:</span> <span class="mi">1199</span><span class="mf">.98</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// `xxl` applies to x-large devices (large desktops, less than 1400px)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">max-width</span><span class="o">:</span> <span class="mi">1399</span><span class="mf">.98</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// `2xl` applies to x-large devices (large desktops, less than 2000px)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">max-width</span><span class="o">:</span> <span class="mi">1999</span><span class="mf">.98</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <div class="bd-callout bd-callout-warning">
+                    <strong>Why subtract .02px?</strong> Browsers don’t
+                    currently support
+                    <a
+                      href="https://www.w3.org/TR/mediaqueries-4/#range-context"
+                      >range context queries</a
+                    >, so we work around the limitations of
+                    <a href="https://www.w3.org/TR/mediaqueries-4/#mq-min-max"
+                      ><code>min-</code> and <code>max-</code> prefixes</a
+                    >
+                    and viewports with fractional widths (which can occur under
+                    certain conditions on high-dpi devices, for instance) by
+                    using values with higher precision.
+                  </div>
+
+                  <h3 id="single-breakpoint">
+                    Single breakpoint
+                    <a
+                      class="anchor-link"
+                      href="#single-breakpoint"
+                      aria-label="Link to this section: Single breakpoint"
+                    ></a>
+                  </h3>
+                  <p>
+                    There are also media queries and mixins for targeting a
+                    single segment of screen sizes using the minimum and maximum
+                    breakpoint widths.
+                  </p>
+                  <div class="bd-code-snippet">
+                    <div class="bd-clipboard">
+                      <button type="button" class="btn-clipboard">
+                        <svg class="bi" role="img" aria-label="Copy">
+                          <use xlink:href="#clipboard"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-only</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-only</span><span class="p">(</span><span class="n">sm</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-only</span><span class="p">(</span><span class="n">md</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-only</span><span class="p">(</span><span class="n">lg</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-only</span><span class="p">(</span><span class="n">xl</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-only</span><span class="p">(</span><span class="n">xxl</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-only</span><span class="p">(</span><span class="n">2xl</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <p>
+                    For example the
+                    <code>@include media-breakpoint-only(md) { ... }</code> will
+                    result in :
+                  </p>
+                  <div class="bd-code-snippet">
+                    <div class="bd-clipboard">
+                      <button type="button" class="btn-clipboard">
+                        <svg class="bi" role="img" aria-label="Copy">
+                          <use xlink:href="#clipboard"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="na">max-width</span><span class="o">:</span> <span class="mi">991</span><span class="mf">.98</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <h3 id="between-breakpoints">
+                    Between breakpoints
+                    <a
+                      class="anchor-link"
+                      href="#between-breakpoints"
+                      aria-label="Link to this section: Between breakpoints"
+                    ></a>
+                  </h3>
+                  <p>
+                    Similarly, media queries may span multiple breakpoint
+                    widths:
+                  </p>
+                  <div class="bd-code-snippet">
+                    <div class="bd-clipboard">
+                      <button type="button" class="btn-clipboard">
+                        <svg class="bi" role="img" aria-label="Copy">
+                          <use xlink:href="#clipboard"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="k">@include</span><span class="nd"> media-breakpoint-between</span><span class="p">(</span><span class="n">md</span><span class="o">,</span> <span class="n">xl</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <p>Which results in:</p>
+                  <div class="bd-code-snippet">
+                    <div class="bd-clipboard">
+                      <button type="button" class="btn-clipboard">
+                        <svg class="bi" role="img" aria-label="Copy">
+                          <use xlink:href="#clipboard"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="c1">// Example
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Apply styles starting from medium devices and up to extra large devices
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="na">max-width</span><span class="o">:</span> <span class="mi">1199</span><span class="mf">.98</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <footer></footer>
+      </div>
+    </div>
+    <script src="../assets/static/js/components/dark.js"></script>
+    <script src="../assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/partials/sidebar.js"></script>
+    <script src="../assets/partials/sidebarActive.js"></script>
+    <script src="../assets/partials/footer.js"></script>
+
+    <script src="../assets/compiled/js/app.js"></script>
+    <script>
+      function copyCode() {
+        // Get the text field
+        // var copyText = document.getElementById(input);
+
+        // Select the text field
+        // copyText.select();
+        // copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText("awdsadsad");
+
+        // Alert the copied text
+        alert("Copied the text: " + "awdsadsad");
+      }
+    </script>
+  </body>
+</html>

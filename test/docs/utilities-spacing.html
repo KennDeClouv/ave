@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docs Spacing</title>
+
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2033%2034'%20fill-rule='evenodd'%20stroke-linejoin='round'%20stroke-miterlimit='2'%20xmlns:v='https://vecta.io/nano'%3e%3cpath%20d='M3%2027.472c0%204.409%206.18%205.552%2013.5%205.552%207.281%200%2013.5-1.103%2013.5-5.513s-6.179-5.552-13.5-5.552c-7.281%200-13.5%201.103-13.5%205.513z'%20fill='%23435ebe'%20fill-rule='nonzero'/%3e%3ccircle%20cx='16.5'%20cy='8.8'%20r='8.8'%20fill='%2341bbdd'/%3e%3c/svg%3e"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAEs2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjMzIgogICBleGlmOlBpeGVsWURpbWVuc2lvbj0iMzQiCiAgIGV4aWY6Q29sb3JTcGFjZT0iMSIKICAgdGlmZjpJbWFnZVdpZHRoPSIzMyIKICAgdGlmZjpJbWFnZUxlbmd0aD0iMzQiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249Ijk2LjAiCiAgIHRpZmY6WVJlc29sdXRpb249Ijk2LjAiCiAgIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiCiAgIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjItMDMtMzFUMTA6NTA6MjMrMDI6MDAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDMtMzFUMTA6NTA6MjMrMDI6MDAiPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJwcm9kdWNlZCIKICAgICAgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWZmaW5pdHkgRGVzaWduZXIgMS4xMC4xIgogICAgICBzdEV2dDp3aGVuPSIyMDIyLTAzLTMxVDEwOjUwOjIzKzAyOjAwIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InIiPz5V57uAAAABgmlDQ1BzUkdCIElFQzYxOTY2LTIuMQAAKJF1kc8rRFEUxz9maORHo1hYKC9hISNGTWwsRn4VFmOUX5uZZ36oeTOv954kW2WrKLHxa8FfwFZZK0WkZClrYoOe87ypmWTO7dzzud97z+nec8ETzaiaWd4NWtYyIiNhZWZ2TvE946WZSjqoj6mmPjE1HKWkfdxR5sSbgFOr9Ll/rXoxYapQVik8oOqGJTwqPL5i6Q5vCzeo6dii8KlwpyEXFL519LjLLw6nXP5y2IhGBsFTJ6ykijhexGra0ITl5bRqmWU1fx/nJTWJ7PSUxBbxJkwijBBGYYwhBgnRQ7/MIQIE6ZIVJfK7f/MnyUmuKrPOKgZLpEhj0SnqslRPSEyKnpCRYdXp/9++msneoFu9JgwVT7b91ga+LfjetO3PQ9v+PgLvI1xkC/m5A+h7F32zoLXug38dzi4LWnwHzjeg8UGPGbFfySvuSSbh9QRqZ6H+Gqrm3Z7l9zm+h+iafNUV7O5Bu5z3L/wAdthn7QIme0YAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJTSURBVFiF7Zi9axRBGIefEw2IdxFBRQsLWUTBaywSK4ubdSGVIY1Y6HZql8ZKCGIqwX/AYLmCgVQKfiDn7jZeEQMWfsSAHAiKqPiB5mIgELWYOW5vzc3O7niHhT/YZvY37/swM/vOzJbIqVq9uQ04CYwCI8AhYAlYAB4Dc7HnrOSJWcoJcBS4ARzQ2F4BZ2LPmTeNuykHwEWgkQGAet9QfiMZjUSt3hwD7psGTWgs9pwH1hC1enMYeA7sKwDxBqjGnvNdZzKZjqmCAKh+U1kmEwi3IEBbIsugnY5avTkEtIAtFhBrQCX2nLVehqyRqFoCAAwBh3WGLAhbgCRIYYinwLolwLqKUwwi9pxV4KUlxKKKUwxC6ZElRCPLYAJxGfhSEOCz6m8HEXvOB2CyIMSk6m8HoXQTmMkJcA2YNTHm3congOvATo3tE3A29pxbpnFzQSiQPcB55IFmFNgFfEQeahaAGZMpsIJIAZWAHcDX2HN+2cT6r39GxmvC9aPNwH5gO1BOPFuBVWAZue0vA9+A12EgjPadnhCuH1WAE8ivYAQ4ohKaagV4gvxi5oG7YSA2vApsCOH60WngKrA3R9IsvQUuhIGY00K4flQG7gHH/mLytB4C42EgfrQb0mV7us8AAMeBS8mGNMR4nwHamtBB7B4QRNdaS0M8GxDEog7iyoAguvJ0QYSBuAOcAt71Kfl7wA8DcTvZ2KtOlJEr+ByyQtqqhTyHTIeB+ONeqi3brh+VgIN0fohUgWGggizZFTplu12yW8iy/YLOGWMpDMTPXnl+Az9vj2HERYqPAAAAAElFTkSuQmCC"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" crossorigin="" href="../assets/compiled/css/app.css" />
+    <link
+      rel="stylesheet"
+      crossorigin=""
+      href="../assets/compiled/css/app-dark.css"
+    />
+    <link rel="stylesheet" href="../assets/compiled/css/copy-button.css" />
+  </head>
+
+  <body>
+    <script src="../assets/static/js/initTheme.js"></script>
+    <div id="app">
+      <div id="sidebar"></div>
+      <div id="main">
+        <header class="mb-3">
+          <a href="#" class="burger-btn d-block d-xl-none">
+            <i class="bi bi-justify fs-3"></i>
+          </a>
+        </header>
+
+        <div class="page-heading">
+          <div class="page-title">
+            <div class="row">
+              <div class="col-12 col-md-6 order-md-1 order-last">
+                <h1>Utilities</h1>
+              </div>
+              <div class="col-12 col-md-6 order-md-2 order-first">
+                <nav
+                  aria-label="breadcrumb"
+                  class="breadcrumb-header float-start float-lg-end"
+                >
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="../">Utilities</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Spacing
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <section class="section">
+            <div class="card">
+              <div class="card-body px-5 fs-5">
+                <div class="bd-content ps-lg-2">
+                  <h2 id="margin-and-padding">
+                    Margin and padding
+                    <a
+                      class="anchor-link"
+                      href="#margin-and-padding"
+                      aria-label="Link to this section: Margin and padding"
+                    ></a>
+                  </h2>
+                  <p>
+                    Assign responsive-friendly <code>margin</code> or
+                    <code>padding</code> values to an element or a subset of its
+                    sides with shorthand classes. Includes support for
+                    individual properties, all properties, and vertical and
+                    horizontal properties. Classes are built from a default Sass
+                    map ranging from <code>.25rem</code> to <code>3rem</code>.
+                  </p>
+                  <div class="bd-callout bd-callout-info">
+                    <strong>Using the CSS Grid layout module?</strong> Consider
+                    using <a href="#gap">the gap utility</a> instead.
+                  </div>
+
+                  <h3 id="notation">
+                    Notation
+                    <a
+                      class="anchor-link"
+                      href="#notation"
+                      aria-label="Link to this section: Notation"
+                    ></a>
+                  </h3>
+                  <p>
+                    Spacing utilities that apply to all breakpoints, from
+                    <code>xs</code> to <code>xxl</code>, have no breakpoint
+                    abbreviation in them. This is because those classes are
+                    applied from <code>min-width: 0</code> and up, and thus are
+                    not bound by a media query. The remaining breakpoints,
+                    however, do include a breakpoint abbreviation.
+                  </p>
+                  <p>
+                    The classes are named using the format
+                    <code>{property}{sides}-{size}</code> for
+                    <code>xs</code> and
+                    <code>{property}{sides}-{breakpoint}-{size}</code> for
+                    <code>sm</code>, <code>md</code>, <code>lg</code>,
+                    <code>xl</code>, and <code>xxl</code>.
+                  </p>
+                  <p>Where <em>property</em> is one of:</p>
+                  <ul>
+                    <li>
+                      <code>m</code> - for classes that set <code>margin</code>
+                    </li>
+                    <li>
+                      <code>p</code> - for classes that set <code>padding</code>
+                    </li>
+                  </ul>
+                  <p>Where <em>sides</em> is one of:</p>
+                  <ul>
+                    <li>
+                      <code>t</code> - for classes that set
+                      <code>margin-top</code> or <code>padding-top</code>
+                    </li>
+                    <li>
+                      <code>b</code> - for classes that set
+                      <code>margin-bottom</code> or <code>padding-bottom</code>
+                    </li>
+                    <li>
+                      <code>s</code> - (start) for classes that set
+                      <code>margin-left</code> or <code>padding-left</code> in
+                      LTR, <code>margin-right</code> or
+                      <code>padding-right</code> in RTL
+                    </li>
+                    <li>
+                      <code>e</code> - (end) for classes that set
+                      <code>margin-right</code> or <code>padding-right</code> in
+                      LTR, <code>margin-left</code> or
+                      <code>padding-left</code> in RTL
+                    </li>
+                    <li>
+                      <code>x</code> - for classes that set both
+                      <code>*-left</code> and <code>*-right</code>
+                    </li>
+                    <li>
+                      <code>y</code> - for classes that set both
+                      <code>*-top</code> and <code>*-bottom</code>
+                    </li>
+                    <li>
+                      blank - for classes that set a <code>margin</code> or
+                      <code>padding</code> on all 4 sides of the element
+                    </li>
+                  </ul>
+                  <p>Where <em>size</em> is one of:</p>
+                  <ul>
+                    <li>
+                      <code>0</code> - for classes that eliminate the
+                      <code>margin</code> or <code>padding</code> by setting it
+                      to <code>0</code>
+                    </li>
+                    <li>
+                      <code>1</code> - (by default) for classes that set the
+                      <code>margin</code> or <code>padding</code> to
+                      <code>$spacer * .25</code>
+                    </li>
+                    <li>
+                      <code>2</code> - (by default) for classes that set the
+                      <code>margin</code> or <code>padding</code> to
+                      <code>$spacer * .5</code>
+                    </li>
+                    <li>
+                      <code>3</code> - (by default) for classes that set the
+                      <code>margin</code> or <code>padding</code> to
+                      <code>$spacer</code>
+                    </li>
+                    <li>
+                      <code>4</code> - (by default) for classes that set the
+                      <code>margin</code> or <code>padding</code> to
+                      <code>$spacer * 1.5</code>
+                    </li>
+                    <li>
+                      <code>5</code> - (by default) for classes that set the
+                      <code>margin</code> or <code>padding</code> to
+                      <code>$spacer * 3</code>
+                    </li>
+                    <li>
+                      <code>auto</code> - for classes that set the
+                      <code>margin</code> to auto
+                    </li>
+                  </ul>
+                  <p>
+                    (You can add more sizes by adding entries to the
+                    <code>$spacers</code> Sass map variable.)
+                  </p>
+                  <h3 id="examples">
+                    Examples
+                    <a
+                      class="anchor-link"
+                      href="#examples"
+                      aria-label="Link to this section: Examples"
+                    ></a>
+                  </h3>
+                  <p>Here are some representative examples of these classes:</p>
+                  <div class="bd-code-snippet">
+                    <div class="bd-clipboard">
+                      <button type="button" class="btn-clipboard">
+                        <svg class="bi" role="img" aria-label="Copy">
+                          <use xlink:href="#clipboard"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nc">.mt-0</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">margin-top</span><span class="o">:</span> <span class="mi">0</span> <span class="k">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nc">.ms-1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">margin-left</span><span class="o">:</span> <span class="p">(</span><span class="nv">$spacer</span> <span class="o">*</span> <span class="mf">.25</span><span class="p">)</span> <span class="k">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nc">.px-2</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">padding-left</span><span class="o">:</span> <span class="p">(</span><span class="nv">$spacer</span> <span class="o">*</span> <span class="mf">.5</span><span class="p">)</span> <span class="k">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">padding-right</span><span class="o">:</span> <span class="p">(</span><span class="nv">$spacer</span> <span class="o">*</span> <span class="mf">.5</span><span class="p">)</span> <span class="k">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nc">.p-3</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">padding</span><span class="o">:</span> <span class="nv">$spacer</span> <span class="k">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <h3 id="horizontal-centering">
+                    Horizontal centering
+                    <a
+                      class="anchor-link"
+                      href="#horizontal-centering"
+                      aria-label="Link to this section: Horizontal centering"
+                    ></a>
+                  </h3>
+                  <p>
+                    Additionally, Avee also includes an
+                    <code>.mx-auto</code> class for horizontally centering
+                    fixed-width block level content—that is, content that has
+                    <code>display: block</code> and a <code>width</code> set—by
+                    setting the horizontal margins to <code>auto</code>.
+                  </p>
+                  <div class="bd-example">
+                    <div
+                      class="mx-auto p-2"
+                      style="
+                        width: 200px;
+                        background-color: rgba(var(--bd-violet-rgb), 0.15);
+                        border: rgba(var(--bd-violet-rgb), 0.3) solid 1px;
+                      "
+                    >
+                      Centered element
+                    </div>
+                  </div>
+                  <div class="bd-code-snippet">
+                    <div class="bd-clipboard">
+                      <button type="button" class="btn-clipboard">
+                        <svg class="bi" role="img" aria-label="Copy">
+                          <use xlink:href="#clipboard"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mx-auto p-2"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width: 200px;"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  Centered element
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <h2 id="negative-margin">
+                    Negative margin
+                    <a
+                      class="anchor-link"
+                      href="#negative-margin"
+                      aria-label="Link to this section: Negative margin"
+                    ></a>
+                  </h2>
+                  <p>
+                    In CSS, <code>margin</code> properties can utilize negative
+                    values (<code>padding</code> cannot). These negative margins
+                    are <strong>disabled by default</strong>, but can be enabled
+                    in Sass by setting
+                    <code>$enable-negative-margins: true</code>.
+                  </p>
+                  <p>
+                    The syntax is nearly the same as the default, positive
+                    margin utilities, but with the addition of
+                    <code>n</code> before the requested size. Here’s an example
+                    class that’s the opposite of <code>.mt-1</code>:
+                  </p>
+                  <div class="bd-code-snippet">
+                    <div class="bd-clipboard">
+                      <button type="button" class="btn-clipboard">
+                        <svg class="bi" role="img" aria-label="Copy">
+                          <use xlink:href="#clipboard"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nc">.mt-n1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">margin-top</span><span class="o">:</span> <span class="o">-</span><span class="mi">0</span><span class="mf">.25</span><span class="kt">rem</span> <span class="k">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <h2 id="gap">
+                    Gap
+                    <a
+                      class="anchor-link"
+                      href="#gap"
+                      aria-label="Link to this section: Gap"
+                    ></a>
+                  </h2>
+                  <p>
+                    When using <code>display: grid</code> or
+                    <code>display: flex</code>, you can make use of
+                    <code>gap</code> utilities on the parent element. This can
+                    save on having to add margin utilities to individual
+                    children of a grid or flex container. Gap utilities are
+                    responsive by default, and are generated via our utilities
+                    API, based on the <code>$spacers</code> Sass map.
+                  </p>
+                  <div class="bd-example-snippet bd-code-snippet">
+                    <div class="bd-example m-0 border-0 bd-example-cssgrid">
+                      <div class="grid gap-3">
+                        <div class="p-2 g-col-6">Grid item 1</div>
+                        <div class="p-2 g-col-6">Grid item 2</div>
+                        <div class="p-2 g-col-6">Grid item 3</div>
+                        <div class="p-2 g-col-6">Grid item 4</div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom"
+                    >
+                      <small
+                        class="font-monospace text-body-secondary text-uppercase"
+                        >html</small
+                      >
+                      <div class="d-flex ms-auto">
+                        <button
+                          type="button"
+                          class="btn-edit text-nowrap"
+                          aria-label="Try it on StackBlitz"
+                          data-bs-original-title="Try it on StackBlitz"
+                        >
+                          <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#lightning-charge-fill"></use>
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-clipboard mt-0 me-0"
+                          aria-label="Copy to clipboard"
+                          data-bs-original-title="Copy to clipboard"
+                        >
+                          <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#clipboard"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid gap-3"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre>
+                    </div>
+                  </div>
+
+                  <p>
+                    Support includes responsive options for all of Avee’s
+                    grid breakpoints, as well as six sizes from the
+                    <code>$spacers</code> map (<code>0</code>–<code>5</code>).
+                    There is no <code>.gap-auto</code> utility class as it’s
+                    effectively the same as <code>.gap-0</code>.
+                  </p>
+                  <h3 id="row-gap">
+                    row-gap
+                    <a
+                      class="anchor-link"
+                      href="#row-gap"
+                      aria-label="Link to this section: row-gap"
+                    ></a>
+                  </h3>
+                  <p>
+                    <code>row-gap</code> sets the vertical space between
+                    children items in the specified container.
+                  </p>
+                  <div class="bd-example-snippet bd-code-snippet">
+                    <div class="bd-example m-0 border-0 bd-example-cssgrid">
+                      <div class="grid gap-0 row-gap-3">
+                        <div class="p-2 g-col-6">Grid item 1</div>
+                        <div class="p-2 g-col-6">Grid item 2</div>
+                        <div class="p-2 g-col-6">Grid item 3</div>
+                        <div class="p-2 g-col-6">Grid item 4</div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom"
+                    >
+                      <small
+                        class="font-monospace text-body-secondary text-uppercase"
+                        >html</small
+                      >
+                      <div class="d-flex ms-auto">
+                        <button
+                          type="button"
+                          class="btn-edit text-nowrap"
+                          aria-label="Try it on StackBlitz"
+                          data-bs-original-title="Try it on StackBlitz"
+                        >
+                          <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#lightning-charge-fill"></use>
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-clipboard mt-0 me-0"
+                          aria-label="Copy to clipboard"
+                          data-bs-original-title="Copy to clipboard"
+                        >
+                          <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#clipboard"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid gap-0 row-gap-3"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre>
+                    </div>
+                  </div>
+
+                  <h3 id="column-gap">
+                    column-gap
+                    <a
+                      class="anchor-link"
+                      href="#column-gap"
+                      aria-label="Link to this section: column-gap"
+                    ></a>
+                  </h3>
+                  <p>
+                    <code>column-gap</code> sets the horizontal space between
+                    children items in the specified container.
+                  </p>
+                  <div class="bd-example-snippet bd-code-snippet">
+                    <div class="bd-example m-0 border-0 bd-example-cssgrid">
+                      <div class="grid gap-0 column-gap-3">
+                        <div class="p-2 g-col-6">Grid item 1</div>
+                        <div class="p-2 g-col-6">Grid item 2</div>
+                        <div class="p-2 g-col-6">Grid item 3</div>
+                        <div class="p-2 g-col-6">Grid item 4</div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom"
+                    >
+                      <small
+                        class="font-monospace text-body-secondary text-uppercase"
+                        >html</small
+                      >
+                      <div class="d-flex ms-auto">
+                        <button
+                          type="button"
+                          class="btn-edit text-nowrap"
+                          aria-label="Try it on StackBlitz"
+                          data-bs-original-title="Try it on StackBlitz"
+                        >
+                          <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#lightning-charge-fill"></use>
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-clipboard mt-0 me-0"
+                          aria-label="Copy to clipboard"
+                          data-bs-original-title="Copy to clipboard"
+                        >
+                          <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#clipboard"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid gap-0 column-gap-3"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2 g-col-6"</span><span class="p">&gt;</span>Grid item 4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre>
+                    </div>
+                  </div>
+
+                  <h2 id="css">
+                    CSS
+                    <a
+                      class="anchor-link"
+                      href="#css"
+                      aria-label="Link to this section: CSS"
+                    ></a>
+                  </h2>
+                  <h3 id="sass-maps">
+                    Sass maps
+                    <a
+                      class="anchor-link"
+                      href="#sass-maps"
+                      aria-label="Link to this section: Sass maps"
+                    ></a>
+                  </h3>
+                  <p>
+                    Spacing utilities are declared via Sass map and then
+                    generated with our utilities API.
+                  </p>
+                  <div class="bd-example-snippet bd-code-snippet bd-file-ref">
+                    <div
+                      class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-bottom"
+                    >
+                      <a
+                        class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small"
+                        href="https://github.com/twbs/bootstrap/blob/v1.0.0/scss/_variables.scss"
+                        >scss/_variables.scss</a
+                      >
+                      <div class="d-flex ms-auto">
+                        <button
+                          type="button"
+                          class="btn-clipboard mt-0 me-0"
+                          aria-label="Copy to clipboard"
+                          data-bs-original-title="Copy to clipboard"
+                        >
+                          <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#clipboard"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$spacer</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$spacers</span><span class="o">:</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="na">0</span><span class="o">:</span> <span class="mi">0</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">1</span><span class="o">:</span> <span class="nv">$spacer</span> <span class="o">*</span> <span class="mf">.25</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">2</span><span class="o">:</span> <span class="nv">$spacer</span> <span class="o">*</span> <span class="mf">.5</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">3</span><span class="o">:</span> <span class="nv">$spacer</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">4</span><span class="o">:</span> <span class="nv">$spacer</span> <span class="o">*</span> <span class="mi">1</span><span class="mf">.5</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">5</span><span class="o">:</span> <span class="nv">$spacer</span> <span class="o">*</span> <span class="mi">3</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span></code></pre>
+                    </div>
+                  </div>
+                  <h3 id="sass-utilities-api">
+                    Sass utilities API
+                    <a
+                      class="anchor-link"
+                      href="#sass-utilities-api"
+                      aria-label="Link to this section: Sass utilities API"
+                    ></a>
+                  </h3>
+                  <p>
+                    Spacing utilities are declared in our utilities API in
+                    <code>scss/_utilities.scss</code>.
+                    <a href="/docs/5.3/utilities/api/#using-the-api"
+                      >Learn how to use the utilities API.</a
+                    >
+                  </p>
+                  <div class="bd-example-snippet bd-code-snippet bd-file-ref">
+                    <div
+                      class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-bottom"
+                    >
+                      <a
+                        class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small"
+                        href="https://github.com/twbs/bootstrap/blob/v1.0.0/scss/_utilities.scss"
+                        >scss/_utilities.scss</a
+                      >
+                      <div class="d-flex ms-auto">
+                        <button
+                          type="button"
+                          class="btn-clipboard mt-0 me-0"
+                          aria-label="Copy to clipboard"
+                          data-bs-original-title="Copy to clipboard"
+                        >
+                          <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#clipboard"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="highlight">
+                      <pre
+                        tabindex="0"
+                        class="chroma"
+                      ><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="s2">"margin"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">m</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="nt">map-merge</span><span class="o">(</span><span class="err">$</span><span class="nt">spacers</span><span class="o">,</span> <span class="o">(</span><span class="nt">auto</span><span class="nd">:</span> <span class="nt">auto</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"margin-x"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-right</span> <span class="nt">margin-left</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">mx</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="nt">map-merge</span><span class="o">(</span><span class="err">$</span><span class="nt">spacers</span><span class="o">,</span> <span class="o">(</span><span class="nt">auto</span><span class="nd">:</span> <span class="nt">auto</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"margin-y"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-top</span> <span class="nt">margin-bottom</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">my</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="nt">map-merge</span><span class="o">(</span><span class="err">$</span><span class="nt">spacers</span><span class="o">,</span> <span class="o">(</span><span class="nt">auto</span><span class="nd">:</span> <span class="nt">auto</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"margin-top"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-top</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">mt</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="nt">map-merge</span><span class="o">(</span><span class="err">$</span><span class="nt">spacers</span><span class="o">,</span> <span class="o">(</span><span class="nt">auto</span><span class="nd">:</span> <span class="nt">auto</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"margin-end"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-right</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">me</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="nt">map-merge</span><span class="o">(</span><span class="err">$</span><span class="nt">spacers</span><span class="o">,</span> <span class="o">(</span><span class="nt">auto</span><span class="nd">:</span> <span class="nt">auto</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"margin-bottom"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-bottom</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">mb</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="nt">map-merge</span><span class="o">(</span><span class="err">$</span><span class="nt">spacers</span><span class="o">,</span> <span class="o">(</span><span class="nt">auto</span><span class="nd">:</span> <span class="nt">auto</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"margin-start"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-left</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">ms</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="nt">map-merge</span><span class="o">(</span><span class="err">$</span><span class="nt">spacers</span><span class="o">,</span> <span class="o">(</span><span class="nt">auto</span><span class="nd">:</span> <span class="nt">auto</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="nt">Negative</span> <span class="nt">margin</span> <span class="nt">utilities</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"negative-margin"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">m</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">negative-spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"negative-margin-x"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-right</span> <span class="nt">margin-left</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">mx</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">negative-spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"negative-margin-y"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-top</span> <span class="nt">margin-bottom</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">my</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">negative-spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"negative-margin-top"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-top</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">mt</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">negative-spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"negative-margin-end"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-right</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">me</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">negative-spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"negative-margin-bottom"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-bottom</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">mb</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">negative-spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"negative-margin-start"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">margin-left</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">ms</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">negative-spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="nt">Padding</span> <span class="nt">utilities</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"padding"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">padding</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">p</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"padding-x"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">padding-right</span> <span class="nt">padding-left</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">px</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"padding-y"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">padding-top</span> <span class="nt">padding-bottom</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">py</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"padding-top"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">padding-top</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">pt</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"padding-end"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">padding-right</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">pe</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"padding-bottom"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">padding-bottom</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">pb</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"padding-start"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">padding-left</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">ps</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="nt">Gap</span> <span class="nt">utility</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"gap"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">gap</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">gap</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"row-gap"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">row-gap</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">row-gap</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span>
+</span></span><span class="line"><span class="cl"><span class="s2">"column-gap"</span><span class="nd">:</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">property</span><span class="nd">:</span> <span class="nt">column-gap</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">class</span><span class="nd">:</span> <span class="nt">column-gap</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">values</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacers</span>
+</span></span><span class="line"><span class="cl"><span class="o">),</span></span></span></code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <footer></footer>
+      </div>
+    </div>
+    <script src="../assets/static/js/components/dark.js"></script>
+    <script src="../assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/partials/sidebar.js"></script>
+    <script src="../assets/partials/sidebarActive.js"></script>
+    <script src="../assets/partials/footer.js"></script>
+
+    <script src="../assets/compiled/js/app.js"></script>
+    <script>
+      function copyCode() {
+        // Get the text field
+        // var copyText = document.getElementById(input);
+
+        // Select the text field
+        // copyText.select();
+        // copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText("awdsadsad");
+
+        // Alert the copied text
+        alert("Copied the text: " + "awdsadsad");
+      }
+    </script>
+  </body>
+</html>

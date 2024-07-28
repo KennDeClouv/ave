@@ -1,6 +1,6 @@
 /*!
-  * Bootstrap v5.2.3 (https://getbootstrap.com/)
-  * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Avee v1.0.0 (https://getbootstrap.com/)
+  * Copyright 2011-2022 The Avee Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
@@ -12,7 +12,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/index.js
+   * Avee (v1.0.0): util/index.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -327,7 +327,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): dom/event-handler.js
+   * Avee (v1.0.0): dom/event-handler.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -596,7 +596,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): dom/data.js
+   * Avee (v1.0.0): dom/data.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -616,7 +616,7 @@
 
       if (!instanceMap.has(key) && instanceMap.size !== 0) {
         // eslint-disable-next-line no-console
-        console.error(`Bootstrap doesn't allow more than one instance per element. Bound instance: ${Array.from(instanceMap.keys())[0]}.`);
+        console.error(`Avee doesn't allow more than one instance per element. Bound instance: ${Array.from(instanceMap.keys())[0]}.`);
         return;
       }
 
@@ -648,7 +648,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): dom/manipulator.js
+   * Avee (v1.0.0): dom/manipulator.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -718,7 +718,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/config.js
+   * Avee (v1.0.0): util/config.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -780,7 +780,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): base-component.js
+   * Avee (v1.0.0): base-component.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -788,7 +788,7 @@
    * Constants
    */
 
-  const VERSION = '5.2.3';
+  const VERSION = '1.0.0';
   /**
    * Class definition
    */
@@ -859,7 +859,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/component-functions.js
+   * Avee (v1.0.0): util/component-functions.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -885,7 +885,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): alert.js
+   * Avee (v1.0.0): alert.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -965,7 +965,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): button.js
+   * Avee (v1.0.0): button.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1027,7 +1027,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): dom/selector-engine.js
+   * Avee (v1.0.0): dom/selector-engine.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1098,7 +1098,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/swipe.js
+   * Avee (v1.0.0): util/swipe.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1234,7 +1234,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): carousel.js
+   * Avee (v1.0.0): carousel.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1682,7 +1682,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): collapse.js
+   * Avee (v1.0.0): collapse.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -3818,7 +3818,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): dropdown.js
+   * Avee (v1.0.0): dropdown.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4020,7 +4020,7 @@
 
     _createPopper() {
       if (typeof Popper === 'undefined') {
-        throw new TypeError('Bootstrap\'s dropdowns require Popper (https://popper.js.org)');
+        throw new TypeError('Avee\'s dropdowns require Popper (https://popper.js.org)');
       }
 
       let referenceElement = this._element;
@@ -4251,7 +4251,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/scrollBar.js
+   * Avee (v1.0.0): util/scrollBar.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4370,7 +4370,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/backdrop.js
+   * Avee (v1.0.0): util/backdrop.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4516,7 +4516,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/focustrap.js
+   * Avee (v1.0.0): util/focustrap.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4625,7 +4625,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): modal.js
+   * Avee (v1.0.0): modal.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -5001,7 +5001,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): offcanvas.js
+   * Avee (v1.0.0): offcanvas.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -5275,7 +5275,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/sanitizer.js
+   * Avee (v1.0.0): util/sanitizer.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -5380,7 +5380,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/template-factory.js
+   * Avee (v1.0.0): util/template-factory.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -5539,7 +5539,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): tooltip.js
+   * Avee (v1.0.0): tooltip.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -5621,7 +5621,7 @@
   class Tooltip extends BaseComponent {
     constructor(element, config) {
       if (typeof Popper === 'undefined') {
-        throw new TypeError('Bootstrap\'s tooltips require Popper (https://popper.js.org)');
+        throw new TypeError('Avee\'s tooltips require Popper (https://popper.js.org)');
       }
 
       super(element, config); // Private
@@ -6149,7 +6149,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): popover.js
+   * Avee (v1.0.0): popover.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -6234,7 +6234,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): scrollspy.js
+   * Avee (v1.0.0): scrollspy.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -6525,7 +6525,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): tab.js
+   * Avee (v1.0.0): tab.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -6838,7 +6838,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): toast.js
+   * Avee (v1.0.0): toast.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -7059,7 +7059,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): index.umd.js
+   * Avee (v1.0.0): index.umd.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
