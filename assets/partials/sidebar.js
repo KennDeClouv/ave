@@ -1,7 +1,7 @@
 const title = document.title;
-const home = title === "Main Page" ? "#" : "../";
-const docs = title.includes("Docs") ? "" : "../docs/";
-const demo = title === "Main Page" ? "demo/" : title.includes("Docs") ? "../demo/" : "";
+const home = title === "Main Page" ? "#" : "/";
+const docs = title.includes("Docs") ? "" : "/docs/";
+const demo = title === "Main Page" ? "demo/" : title.includes("Docs") ? "/demo/" : "";
 const sidebar = document.querySelector("#sidebar");
 
 sidebar.innerHTML = `
